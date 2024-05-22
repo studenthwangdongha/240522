@@ -1,0 +1,68 @@
+div {
+    color: white;
+}
+
+.container {
+    width: 400px;
+
+    padding: 1rem;
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: #cccccc;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red-box{
+    background-color: red;
+    float: left;
+    transition-duration: 2s;
+    
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.red-box:hover{
+    background-color: blueviolet;
+    color: yellow;
+    width: 200px;
+}
+
+.green-box{
+    background-color: green;
+    float: left;
+    transition-duration: 2s;
+    transition-delay: 3s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.green-box:hover{
+    background-color: aqua;
+    width: 200px;
+}
+
+.blue-box{
+    background-color: blue;
+    float: left;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}`
+
+.blue-box:hover {
+    background-color: coral;
+    width: 200px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    float: right;
+}
